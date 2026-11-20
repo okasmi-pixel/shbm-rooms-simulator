@@ -9,6 +9,8 @@ Fictitious property: **Atlas Resort & Villas** (140 units).
 ## Versions
 | Version | Date | Changes |
 |---|---|---|
+| 60 | 20-NOV-2026 | Service Requests (screen, Companion, report, dashboard tile) |
+| 59 | 20-NOV-2026 | Attendant Console: Details, Overview, Assistance, breaks, closing rule, productivity report |
 | 58 | 20-NOV-2026 | OPERA Cloud colours, OPERA-style dashboard with pictograms, mobile home list |
 | 57 | 19-NOV-2026 | Supervisor Inspection task sheets |
 
