@@ -3,6 +3,10 @@
 OPERA Cloud–style PMS training simulator for the IVET Housekeeping programme – SHBM, UM6P.
 Fictitious property: **Atlas Resort & Villas** (140 units).
 
+## Open the simulator
+- Online (GitHub Pages): https://okasmi-pixel.github.io/shbm-rooms-simulator/
+- Offline: download `index.html` and open it in Chrome or Edge (an internet connection is needed for the PDF reports).
+
 ## Contents
 - `index.html` – the complete simulator (single file, opens in any browser).
 

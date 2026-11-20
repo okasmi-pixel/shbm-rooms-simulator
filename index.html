@@ -2857,7 +2857,7 @@ async function saveDoc(build,fname){
   if(!window.jspdf){toast('Preparing the PDF…');try{await loadPdfLib()}catch(e){}}
   if(!window.jspdf){toast('The PDF tool did not load. Check the connection and try again.');return 'The PDF tool did not load.'}
   const doc=build();const dl=downloadsP?await downloadsP:null;
-  if(!dl){const m='PDF download is not available in this view. Open the page in claude.ai.';toast(m);return m}
+  if(!dl){try{doc.save(fname);toast('PDF downloaded: '+fname);return 'PDF downloaded: '+fname}catch(e){const m='The PDF could not be downloaded in this browser.';toast(m);return m}}
   try{await dl.save({filename:fname,data:doc.output('blob')});toast('PDF saved: '+fname);return 'PDF saved: '+fname}
   catch(e){const m=e&&e.code==='declined'?'Download cancelled.':e&&e.code==='rate_limited'?'A download prompt is already open. Try again in a moment.':'The PDF could not be saved here.';toast(m);return m}
 }
